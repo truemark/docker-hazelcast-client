@@ -7,10 +7,18 @@ https://hub.docker.com/r/hazelcast/hazelcast/ and https://github.com/hazelcast/h
 Examples:
 
 ~~~~
-docker run -ti -e GROUP_NAME=<name> -e GROUP_PASSWD=<password> -e MEMBER_ADDRESS=<address:port> truemark/docker-hazelcast-client:latest
+docker run -ti \
+-e GROUP_NAME=<name> \
+-e GROUP_PASSWD=<password> \
+-e MEMBER_ADDRESS=<address:port> \
+truemark/docker-hazelcast-client:latest
 ~~~~
 
 ~~~~
-docker run -ti -e GROUP_NAME=<name> -e GROUP_PASSWD=<password> -e MEMBER_ADDRESS=<address:port> truemark/docker-hazelcast-client:latest /bin/bash
+docker run -ti \
+-e GROUP_NAME=<name> \
+-e GROUP_PASSWD=<password> \
+-e MEMBER_ADDRESS=<address:port> \
+truemark/docker-hazelcast-client:latest /bin/bash
 ~~~~
 
