@@ -63,7 +63,7 @@ cat > $HAZELCAST_HOME/hazelcast-client.xml <<EOF
 </hazelcast-client>
 EOF
 
-java -server $JAVA_OPTS com.hazelcast.client.console.ClientConsoleApp &
+java -server $JAVA_OPTS com.hazelcast.client.console.ClientConsoleApp
 PID="$!"
 echo "Process id ${PID} for hazelcast instance is written to location: " $PID_FILE
 echo ${PID} > ${PID_FILE}
